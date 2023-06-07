@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    body {
+      background-color: #f3e5f5;
+      color: #ffffff;
+    }
+
+    .card {
+      background-color: #673ab7;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background-color: #9c27b0;
+      margin-right: 10px;
+    }
+
+    #instruction {
+      margin-top: 20px;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body onload="main()">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Location</span>
+            <div id="loc"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Buttons</span>
+            <div class="button-holder">
+              <button id="a" class="waves-effect waves-light btn" onclick="setA()">A</button>
+              <button id="b" class="waves-effect waves-light btn" onclick="setB()">B</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Information</span>
+            <div id="info"></div>
+            <div id="instruction">Press A and B to update your current Location</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
