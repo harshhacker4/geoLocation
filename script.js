@@ -22,7 +22,7 @@ function onLocationUpdate(event){
 }
 
 function onError(err){
-    alert("Location cant be fetched2!"+ err);
+    console.log("Location cant be fetched2!"+ err);
 }
 
 function setA(){
