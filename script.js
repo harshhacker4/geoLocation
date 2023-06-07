@@ -12,7 +12,7 @@ function main(){
             maximumAge: 1000
         })
     }else{
-        alert("Location cant be fetched!");
+        console.log("Location cant be fetched!");
     }
 }
 
